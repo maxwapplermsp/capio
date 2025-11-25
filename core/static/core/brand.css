@@ -1,0 +1,133 @@
+/* Brand Palette */
+:root {
+  --primary-blue: #0B6FB2;
+  --gradient-from: #5866CC;
+  --gradient-to: #E43DA3;
+  --white: #FFFFFF;
+  --ink-dark: #121722;
+  --tint-1: #D6E7F5;
+  --tint-2: #A9CBE8;
+  --shade-1: #085C93;
+  --shade-2: #06466F;
+  --accent-magenta: #E43DA3;
+}
+
+/* General layout */
+body {
+  background: var(--white);
+  color: var(--ink-dark);
+  font-family: 'Inter', 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Large negative spaces */
+.main-content {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  background: var(--tint-1);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(11,111,178,0.08);
+}
+
+/* Geometric headline font */
+h1, h2, h3 {
+  font-family: 'Inter', 'Montserrat', 'Arial Black', sans-serif;
+  font-weight: 900;
+  letter-spacing: -1px;
+  margin-bottom: 24px;
+  color: var(--primary-blue);
+}
+
+/* MSP gradient accent */
+.gradient-accent {
+  background: linear-gradient(90deg, var(--gradient-from), var(--gradient-to));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 8px;
+}
+
+.btn-primary {
+  background: var(--primary-blue);
+  color: var(--white);
+  font-weight: 700;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(11,111,178,0.12);
+  transition: background 0.2s;
+}
+.btn-primary:hover {
+  background: var(--shade-1);
+}
+
+/* Accent magenta badge */
+.badge-accent {
+  background: var(--accent-magenta);
+  color: var(--white);
+  border-radius: 12px;
+  padding: 4px 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: inline-block;
+}
+
+/* Clean links */
+a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  font-weight: 600;
+}
+a:hover {
+  color: var(--accent-magenta);
+}
+
+/* Add box-shadow to modals, cards etc. */
+.card {
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(18,23,34,0.09);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.navbar {
+  background: var(--white);
+  border-bottom: 3px solid var(--primary-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 5vw;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--primary-blue);
+  letter-spacing: -2px;
+}
+
+.navbar-gradient {
+  background: linear-gradient(90deg, var(--gradient-from) 30%, var(--gradient-to) 90%);
+  height: 5px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: -3px;
+}
+
+.footer {
+  background: var(--tint-2);
+  color: var(--shade-2);
+  text-align: center;
+  padding: 24px 0;
+  font-size: 1rem;
+  margin-top: 40px;
+  border-top: 3px solid var(--primary-blue);
+}

@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}Capio MSP{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'core/brand.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Montserrat:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+      <span class="navbar-brand">Capio MSP</span>
+    </div>
+    <div class="navbar-gradient"></div>
+    <div class="main-content">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <div class="footer">
+      &copy; 2024 Capio MSP
+    </div>
+</body>
+</html>
