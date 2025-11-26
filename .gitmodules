@@ -1,0 +1,3 @@
+[submodule "msp-frontend"]
+	path = msp-frontend
+	url = https://github.com/maxwapplermsp/msp-frontend
